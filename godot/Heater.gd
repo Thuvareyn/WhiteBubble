@@ -3,9 +3,9 @@ extends StaticBody2D
 var isOn
 
 func _ready():
-	get_node("SpriteOff").hide()
-	get_node("SpriteOn").show()
-	isOn = true
+	get_node("SpriteOff").show()
+	get_node("SpriteOn").hide()
+	isOn = false
 	set_fixed_process(true)
 
 func _fixed_process(delta):

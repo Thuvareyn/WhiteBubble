@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=1]
+[gd_scene load_steps=79 format=1]
 
 [ext_resource path="res://res/back.png" type="Texture" id=1]
 [ext_resource path="res://res/light.png" type="Texture" id=2]
@@ -11,26 +11,54 @@
 [ext_resource path="res://Books.gd" type="Script" id=9]
 [ext_resource path="res://EnergyRack.gd" type="Script" id=10]
 [ext_resource path="res://res/energyrack.png" type="Texture" id=11]
-[ext_resource path="res://Workbench.gd" type="Script" id=12]
-[ext_resource path="res://O2Generator.gd" type="Script" id=13]
-[ext_resource path="res://res/o2generator1.png" type="Texture" id=14]
-[ext_resource path="res://res/o2generator2.png" type="Texture" id=15]
-[ext_resource path="res://res/o2generator3.png" type="Texture" id=16]
-[ext_resource path="res://res/o2generator4.png" type="Texture" id=17]
-[ext_resource path="res://res/o2generator5.png" type="Texture" id=18]
-[ext_resource path="res://res/o2generator_idle.png" type="Texture" id=19]
-[ext_resource path="res://Heater.gd" type="Script" id=20]
-[ext_resource path="res://res/heater.png" type="Texture" id=21]
-[ext_resource path="res://res/heater_idle.png" type="Texture" id=22]
-[ext_resource path="res://res/seafloor.png" type="Texture" id=23]
-[ext_resource path="res://res/darkness.png" type="Texture" id=24]
-[ext_resource path="res://Character.gd" type="Script" id=25]
-[ext_resource path="res://res/character1.png" type="Texture" id=26]
-[ext_resource path="res://res/character2.png" type="Texture" id=27]
-[ext_resource path="res://res/character3.png" type="Texture" id=28]
-[ext_resource path="res://res/character4.png" type="Texture" id=29]
-[ext_resource path="res://res/character5.png" type="Texture" id=30]
-[ext_resource path="res://res/character6.png" type="Texture" id=31]
+[ext_resource path="res://BatteryO.gd" type="Script" id=12]
+[ext_resource path="res://res/battery_explode.png" type="Texture" id=13]
+[ext_resource path="res://res/battery0.png" type="Texture" id=14]
+[ext_resource path="res://res/battery10.png" type="Texture" id=15]
+[ext_resource path="res://res/battery20.png" type="Texture" id=16]
+[ext_resource path="res://res/battery30.png" type="Texture" id=17]
+[ext_resource path="res://res/battery40.png" type="Texture" id=18]
+[ext_resource path="res://res/battery50.png" type="Texture" id=19]
+[ext_resource path="res://res/battery60.png" type="Texture" id=20]
+[ext_resource path="res://res/battery70.png" type="Texture" id=21]
+[ext_resource path="res://res/battery80.png" type="Texture" id=22]
+[ext_resource path="res://res/battery90.png" type="Texture" id=23]
+[ext_resource path="res://res/battery100.png" type="Texture" id=24]
+[ext_resource path="res://BatteryL.gd" type="Script" id=25]
+[ext_resource path="res://BatteryH.gd" type="Script" id=26]
+[ext_resource path="res://BatteryT.gd" type="Script" id=27]
+[ext_resource path="res://InterruptorO.gd" type="Script" id=28]
+[ext_resource path="res://res/o_off.png" type="Texture" id=29]
+[ext_resource path="res://res/o_on.png" type="Texture" id=30]
+[ext_resource path="res://InterruptorL.gd" type="Script" id=31]
+[ext_resource path="res://res/l_off.png" type="Texture" id=32]
+[ext_resource path="res://res/l_on.png" type="Texture" id=33]
+[ext_resource path="res://InterruptorH.gd" type="Script" id=34]
+[ext_resource path="res://res/h_off.png" type="Texture" id=35]
+[ext_resource path="res://res/h_on.png" type="Texture" id=36]
+[ext_resource path="res://InterruptorT.gd" type="Script" id=37]
+[ext_resource path="res://res/t_off.png" type="Texture" id=38]
+[ext_resource path="res://res/t_on.png" type="Texture" id=39]
+[ext_resource path="res://Workbench.gd" type="Script" id=40]
+[ext_resource path="res://O2Generator.gd" type="Script" id=41]
+[ext_resource path="res://res/o2generator1.png" type="Texture" id=42]
+[ext_resource path="res://res/o2generator2.png" type="Texture" id=43]
+[ext_resource path="res://res/o2generator3.png" type="Texture" id=44]
+[ext_resource path="res://res/o2generator4.png" type="Texture" id=45]
+[ext_resource path="res://res/o2generator5.png" type="Texture" id=46]
+[ext_resource path="res://res/o2generator_idle.png" type="Texture" id=47]
+[ext_resource path="res://Heater.gd" type="Script" id=48]
+[ext_resource path="res://res/heater.png" type="Texture" id=49]
+[ext_resource path="res://res/heater_idle.png" type="Texture" id=50]
+[ext_resource path="res://res/seafloor.png" type="Texture" id=51]
+[ext_resource path="res://res/darkness.png" type="Texture" id=52]
+[ext_resource path="res://Character.gd" type="Script" id=53]
+[ext_resource path="res://res/character1.png" type="Texture" id=54]
+[ext_resource path="res://res/character2.png" type="Texture" id=55]
+[ext_resource path="res://res/character3.png" type="Texture" id=56]
+[ext_resource path="res://res/character4.png" type="Texture" id=57]
+[ext_resource path="res://res/character5.png" type="Texture" id=58]
+[ext_resource path="res://res/character6.png" type="Texture" id=59]
 
 [sub_resource type="RectangleShape2D" id=2]
 
@@ -47,6 +75,56 @@ extents = Vector2( 10, 10 )
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
+[sub_resource type="SpriteFrames" id=14]
+
+animations = [ {
+"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=15]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="SpriteFrames" id=16]
+
+animations = [ {
+"frames": [ ExtResource( 29 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=17]
+
+animations = [ {
+"frames": [ ExtResource( 32 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=18]
+
+animations = [ {
+"frames": [ ExtResource( 35 ), ExtResource( 36 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=19]
+
+animations = [ {
+"frames": [ ExtResource( 38 ), ExtResource( 39 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [sub_resource type="RectangleShape2D" id=11]
 
 custom_solver_bias = 0.0
@@ -55,7 +133,7 @@ extents = Vector2( 10, 10 )
 [sub_resource type="SpriteFrames" id=12]
 
 animations = [ {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ],
+"frames": [ ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -85,7 +163,7 @@ height = 20.0
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"frames": [ ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -254,11 +332,10 @@ _update_shape_index = 0
 
 [node name="EnergyRack" type="StaticBody2D" parent="Back"]
 
-editor/display_folded = true
-transform/pos = Vector2( 192, 350 )
+transform/pos = Vector2( 200, 350 )
 input/pickable = true
 shapes/0/shape = SubResource( 10 )
-shapes/0/transform = Matrix32( 2.8, 0, 0, 2, 0, 0 )
+shapes/0/transform = Matrix32( 2.8, 0, 0, 2, -3, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -270,6 +347,7 @@ script/script = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Back/EnergyRack"]
 
+transform/pos = Vector2( -3, 0 )
 transform/scale = Vector2( 2.8, 2 )
 shape = SubResource( 10 )
 trigger = false
@@ -277,9 +355,162 @@ _update_shape_index = 0
 
 [node name="Sprite" type="Sprite" parent="Back/EnergyRack"]
 
-transform/pos = Vector2( -192, -350 )
 texture = ExtResource( 11 )
-offset = Vector2( 256, 192 )
+
+[node name="Battery1" type="Node2D" parent="Back/EnergyRack"]
+
+editor/display_folded = true
+script/script = ExtResource( 12 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Battery1"]
+
+frames = SubResource( 14 )
+animation = "default"
+
+[node name="Battery2" type="Node2D" parent="Back/EnergyRack"]
+
+editor/display_folded = true
+transform/pos = Vector2( 12, 0 )
+script/script = ExtResource( 25 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Battery2"]
+
+frames = SubResource( 14 )
+animation = "default"
+
+[node name="Battery3" type="Node2D" parent="Back/EnergyRack"]
+
+editor/display_folded = true
+transform/pos = Vector2( 24, 0 )
+script/script = ExtResource( 26 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Battery3"]
+
+frames = SubResource( 14 )
+animation = "default"
+
+[node name="Battery4" type="Node2D" parent="Back/EnergyRack"]
+
+editor/display_folded = true
+transform/pos = Vector2( 36, 0 )
+script/script = ExtResource( 27 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Battery4"]
+
+frames = SubResource( 14 )
+animation = "default"
+
+[node name="Interruptor1" type="StaticBody2D" parent="Back/EnergyRack"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 15 )
+shapes/0/transform = Matrix32( 0.3, 0, 0, 0.7, -21, -9 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script/script = ExtResource( 28 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Interruptor1"]
+
+frames = SubResource( 16 )
+animation = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Back/EnergyRack/Interruptor1"]
+
+transform/pos = Vector2( -21, -9 )
+transform/scale = Vector2( 0.3, 0.7 )
+shape = SubResource( 15 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Interruptor2" type="StaticBody2D" parent="Back/EnergyRack"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 15 )
+shapes/0/transform = Matrix32( 0.3, 0, 0, 0.7, -9, -9 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script/script = ExtResource( 31 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Interruptor2"]
+
+frames = SubResource( 17 )
+animation = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Back/EnergyRack/Interruptor2"]
+
+transform/pos = Vector2( -9, -9 )
+transform/scale = Vector2( 0.3, 0.7 )
+shape = SubResource( 15 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Interruptor3" type="StaticBody2D" parent="Back/EnergyRack"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 15 )
+shapes/0/transform = Matrix32( 0.3, 0, 0, 0.7, 3, -9 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script/script = ExtResource( 34 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Interruptor3"]
+
+frames = SubResource( 18 )
+animation = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Back/EnergyRack/Interruptor3"]
+
+transform/pos = Vector2( 3, -9 )
+transform/scale = Vector2( 0.3, 0.7 )
+shape = SubResource( 15 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Interruptor4" type="StaticBody2D" parent="Back/EnergyRack"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 15 )
+shapes/0/transform = Matrix32( 0.3, 0, 0, 0.7, 15, -9 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script/script = ExtResource( 37 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Interruptor4"]
+
+frames = SubResource( 19 )
+animation = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Back/EnergyRack/Interruptor4"]
+
+transform/pos = Vector2( 15, -9 )
+transform/scale = Vector2( 0.3, 0.7 )
+shape = SubResource( 15 )
+trigger = false
+_update_shape_index = 0
 
 [node name="Workbench" type="StaticBody2D" parent="Back"]
 
@@ -295,7 +526,7 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
-script/script = ExtResource( 12 )
+script/script = ExtResource( 40 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Back/Workbench"]
 
@@ -318,7 +549,7 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
-script/script = ExtResource( 13 )
+script/script = ExtResource( 41 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Back/O2Generator"]
 
@@ -332,12 +563,13 @@ _update_shape_index = 0
 
 frames = SubResource( 12 )
 animation = "default"
+frame = 1
 playing = true
 
 [node name="IdleSprite" type="Sprite" parent="Back/O2Generator"]
 
 visibility/visible = false
-texture = ExtResource( 19 )
+texture = ExtResource( 47 )
 
 [node name="Heater" type="StaticBody2D" parent="Back"]
 
@@ -353,15 +585,15 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
-script/script = ExtResource( 20 )
+script/script = ExtResource( 48 )
 
 [node name="SpriteOn" type="Sprite" parent="Back/Heater"]
 
-texture = ExtResource( 21 )
+texture = ExtResource( 49 )
 
 [node name="SpriteOff" type="Sprite" parent="Back/Heater"]
 
-texture = ExtResource( 22 )
+texture = ExtResource( 50 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Back/Heater"]
 
@@ -374,14 +606,14 @@ _update_shape_index = 0
 [node name="WaterFloor" type="Sprite" parent="Back"]
 
 z/z = 5
-texture = ExtResource( 23 )
+texture = ExtResource( 51 )
 offset = Vector2( 256, 192 )
 
-[node name="Sprite" type="Sprite" parent="Back"]
+[node name="Darkness" type="Sprite" parent="Back"]
 
 visibility/visible = false
 z/z = 10
-texture = ExtResource( 24 )
+texture = ExtResource( 52 )
 offset = Vector2( 256, 192 )
 
 [node name="StairDownFloor2" type="Area2D" parent="Back"]
@@ -530,7 +762,7 @@ shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 collision/margin = 0.08
-script/script = ExtResource( 25 )
+script/script = ExtResource( 53 )
 
 [node name="WalkRight" type="AnimatedSprite" parent="Character"]
 
@@ -584,6 +816,14 @@ _update_shape_index = 0
 [connection signal="input_event" from="Back/Books" to="Back/Books" method="_on_Books_input_event"]
 
 [connection signal="input_event" from="Back/EnergyRack" to="Back/EnergyRack" method="_on_EnergyRack_input_event"]
+
+[connection signal="input_event" from="Back/EnergyRack/Interruptor1" to="Back/EnergyRack/Interruptor1" method="_on_Interruptor1_input_event"]
+
+[connection signal="input_event" from="Back/EnergyRack/Interruptor2" to="Back/EnergyRack/Interruptor2" method="_on_Interruptor2_input_event"]
+
+[connection signal="input_event" from="Back/EnergyRack/Interruptor3" to="Back/EnergyRack/Interruptor3" method="_on_Interruptor3_input_event"]
+
+[connection signal="input_event" from="Back/EnergyRack/Interruptor4" to="Back/EnergyRack/Interruptor4" method="_on_Interruptor4_input_event"]
 
 [connection signal="input_event" from="Back/Workbench" to="Back/Workbench" method="_on_Workbench_input_event"]
 
