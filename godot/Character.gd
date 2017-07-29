@@ -14,9 +14,9 @@ func _ready():
 
 func _fixed_process(delta):
 	if takingStairs:
-		set_z(1)
-	else:
 		set_z(2)
+	else:
+		set_z(3)
 
 	var direction = Vector2()
 	if targetFloor == actualFloor && !takingStairs:
