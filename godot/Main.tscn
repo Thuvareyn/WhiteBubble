@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=1]
+[gd_scene load_steps=100 format=1]
 
 [ext_resource path="res://res/back.png" type="Texture" id=1]
 [ext_resource path="res://res/light.png" type="Texture" id=2]
@@ -24,41 +24,56 @@
 [ext_resource path="res://res/battery80.png" type="Texture" id=22]
 [ext_resource path="res://res/battery90.png" type="Texture" id=23]
 [ext_resource path="res://res/battery100.png" type="Texture" id=24]
-[ext_resource path="res://BatteryL.gd" type="Script" id=25]
-[ext_resource path="res://BatteryH.gd" type="Script" id=26]
-[ext_resource path="res://BatteryT.gd" type="Script" id=27]
-[ext_resource path="res://InterruptorO.gd" type="Script" id=28]
-[ext_resource path="res://res/o_off.png" type="Texture" id=29]
-[ext_resource path="res://res/o_on.png" type="Texture" id=30]
-[ext_resource path="res://InterruptorL.gd" type="Script" id=31]
-[ext_resource path="res://res/l_off.png" type="Texture" id=32]
-[ext_resource path="res://res/l_on.png" type="Texture" id=33]
-[ext_resource path="res://InterruptorH.gd" type="Script" id=34]
-[ext_resource path="res://res/h_off.png" type="Texture" id=35]
-[ext_resource path="res://res/h_on.png" type="Texture" id=36]
-[ext_resource path="res://InterruptorT.gd" type="Script" id=37]
-[ext_resource path="res://res/t_off.png" type="Texture" id=38]
-[ext_resource path="res://res/t_on.png" type="Texture" id=39]
-[ext_resource path="res://Workbench.gd" type="Script" id=40]
-[ext_resource path="res://O2Generator.gd" type="Script" id=41]
-[ext_resource path="res://res/o2generator1.png" type="Texture" id=42]
-[ext_resource path="res://res/o2generator2.png" type="Texture" id=43]
-[ext_resource path="res://res/o2generator3.png" type="Texture" id=44]
-[ext_resource path="res://res/o2generator4.png" type="Texture" id=45]
-[ext_resource path="res://res/o2generator5.png" type="Texture" id=46]
-[ext_resource path="res://res/o2generator_idle.png" type="Texture" id=47]
-[ext_resource path="res://Heater.gd" type="Script" id=48]
-[ext_resource path="res://res/heater.png" type="Texture" id=49]
-[ext_resource path="res://res/heater_idle.png" type="Texture" id=50]
-[ext_resource path="res://res/seafloor.png" type="Texture" id=51]
-[ext_resource path="res://res/darkness.png" type="Texture" id=52]
-[ext_resource path="res://Character.gd" type="Script" id=53]
-[ext_resource path="res://res/character1.png" type="Texture" id=54]
-[ext_resource path="res://res/character2.png" type="Texture" id=55]
-[ext_resource path="res://res/character3.png" type="Texture" id=56]
-[ext_resource path="res://res/character4.png" type="Texture" id=57]
-[ext_resource path="res://res/character5.png" type="Texture" id=58]
-[ext_resource path="res://res/character6.png" type="Texture" id=59]
+[ext_resource path="res://res/explosion1.png" type="Texture" id=25]
+[ext_resource path="res://res/explosion2.png" type="Texture" id=26]
+[ext_resource path="res://res/explosion3.png" type="Texture" id=27]
+[ext_resource path="res://res/explosion4.png" type="Texture" id=28]
+[ext_resource path="res://BatteryL.gd" type="Script" id=29]
+[ext_resource path="res://BatteryH.gd" type="Script" id=30]
+[ext_resource path="res://BatteryT.gd" type="Script" id=31]
+[ext_resource path="res://InterruptorO.gd" type="Script" id=32]
+[ext_resource path="res://res/o_off.png" type="Texture" id=33]
+[ext_resource path="res://res/o_on.png" type="Texture" id=34]
+[ext_resource path="res://InterruptorL.gd" type="Script" id=35]
+[ext_resource path="res://res/l_off.png" type="Texture" id=36]
+[ext_resource path="res://res/l_on.png" type="Texture" id=37]
+[ext_resource path="res://InterruptorH.gd" type="Script" id=38]
+[ext_resource path="res://res/h_off.png" type="Texture" id=39]
+[ext_resource path="res://res/h_on.png" type="Texture" id=40]
+[ext_resource path="res://InterruptorT.gd" type="Script" id=41]
+[ext_resource path="res://res/t_off.png" type="Texture" id=42]
+[ext_resource path="res://res/t_on.png" type="Texture" id=43]
+[ext_resource path="res://Workbench.gd" type="Script" id=44]
+[ext_resource path="res://O2Generator.gd" type="Script" id=45]
+[ext_resource path="res://res/o2generator1.png" type="Texture" id=46]
+[ext_resource path="res://res/o2generator2.png" type="Texture" id=47]
+[ext_resource path="res://res/o2generator3.png" type="Texture" id=48]
+[ext_resource path="res://res/o2generator4.png" type="Texture" id=49]
+[ext_resource path="res://res/o2generator5.png" type="Texture" id=50]
+[ext_resource path="res://res/o2generator_idle.png" type="Texture" id=51]
+[ext_resource path="res://Heater.gd" type="Script" id=52]
+[ext_resource path="res://res/heater.png" type="Texture" id=53]
+[ext_resource path="res://res/heater_idle.png" type="Texture" id=54]
+[ext_resource path="res://res/seafloor.png" type="Texture" id=55]
+[ext_resource path="res://res/darkness.png" type="Texture" id=56]
+[ext_resource path="res://Character.gd" type="Script" id=57]
+[ext_resource path="res://res/character1.png" type="Texture" id=58]
+[ext_resource path="res://res/character2.png" type="Texture" id=59]
+[ext_resource path="res://res/character3.png" type="Texture" id=60]
+[ext_resource path="res://res/character4.png" type="Texture" id=61]
+[ext_resource path="res://res/character5.png" type="Texture" id=62]
+[ext_resource path="res://res/character6.png" type="Texture" id=63]
+[ext_resource path="res://res/food1.png" type="Texture" id=64]
+[ext_resource path="res://res/food2.png" type="Texture" id=65]
+[ext_resource path="res://res/humor1.png" type="Texture" id=66]
+[ext_resource path="res://res/humor2.png" type="Texture" id=67]
+[ext_resource path="res://res/humor3.png" type="Texture" id=68]
+[ext_resource path="res://res/humor4.png" type="Texture" id=69]
+[ext_resource path="res://res/humor5.png" type="Texture" id=70]
+[ext_resource path="res://res/humor6.png" type="Texture" id=71]
+[ext_resource path="res://res/humor7.png" type="Texture" id=72]
+[ext_resource path="res://res/energy1.png" type="Texture" id=73]
+[ext_resource path="res://res/energy2.png" type="Texture" id=74]
 
 [sub_resource type="RectangleShape2D" id=2]
 
@@ -84,6 +99,42 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="SpriteFrames" id=20]
+
+animations = [ {
+"frames": [ ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=21]
+
+resource/name = "Explosion"
+length = 0.4
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("ExplosionAnimation:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": FloatArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 3 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ExplosionAnimation:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 0.4 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
 [sub_resource type="RectangleShape2D" id=15]
 
 custom_solver_bias = 0.0
@@ -92,7 +143,7 @@ extents = Vector2( 10, 10 )
 [sub_resource type="SpriteFrames" id=16]
 
 animations = [ {
-"frames": [ ExtResource( 29 ), ExtResource( 30 ) ],
+"frames": [ ExtResource( 33 ), ExtResource( 34 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -101,7 +152,7 @@ animations = [ {
 [sub_resource type="SpriteFrames" id=17]
 
 animations = [ {
-"frames": [ ExtResource( 32 ), ExtResource( 33 ) ],
+"frames": [ ExtResource( 36 ), ExtResource( 37 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -110,7 +161,7 @@ animations = [ {
 [sub_resource type="SpriteFrames" id=18]
 
 animations = [ {
-"frames": [ ExtResource( 35 ), ExtResource( 36 ) ],
+"frames": [ ExtResource( 39 ), ExtResource( 40 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -119,7 +170,7 @@ animations = [ {
 [sub_resource type="SpriteFrames" id=19]
 
 animations = [ {
-"frames": [ ExtResource( 38 ), ExtResource( 39 ) ],
+"frames": [ ExtResource( 42 ), ExtResource( 43 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -133,7 +184,7 @@ extents = Vector2( 10, 10 )
 [sub_resource type="SpriteFrames" id=12]
 
 animations = [ {
-"frames": [ ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
+"frames": [ ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -163,7 +214,7 @@ height = 20.0
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ) ],
+"frames": [ ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -219,6 +270,42 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 0, 1, 2, 3, 4, 5, 5 ]
 }
+
+[sub_resource type="SpriteFrames" id=22]
+
+animations = [ {
+"frames": [ ExtResource( 64 ), ExtResource( 65 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=23]
+
+animations = [ {
+"frames": [ ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=24]
+
+animations = [ {
+"frames": [ ExtResource( 73 ), ExtResource( 74 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=25]
+
+animations = [ {
+"frames": [ ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="Main" type="Node2D"]
 
@@ -332,6 +419,7 @@ _update_shape_index = 0
 
 [node name="EnergyRack" type="StaticBody2D" parent="Back"]
 
+editor/display_folded = true
 transform/pos = Vector2( 200, 350 )
 input/pickable = true
 shapes/0/shape = SubResource( 10 )
@@ -362,43 +450,113 @@ texture = ExtResource( 11 )
 editor/display_folded = true
 script/script = ExtResource( 12 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Battery1"]
+[node name="BatteryAnimation" type="AnimatedSprite" parent="Back/EnergyRack/Battery1"]
 
 frames = SubResource( 14 )
 animation = "default"
+
+[node name="ExplosionAnimation" type="AnimatedSprite" parent="Back/EnergyRack/Battery1"]
+
+visibility/visible = false
+transform/pos = Vector2( -20, 12 )
+frames = SubResource( 20 )
+animation = "default"
+frame = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Back/EnergyRack/Battery1"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/Explosion = SubResource( 21 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
 
 [node name="Battery2" type="Node2D" parent="Back/EnergyRack"]
 
-editor/display_folded = true
 transform/pos = Vector2( 12, 0 )
-script/script = ExtResource( 25 )
+script/script = ExtResource( 29 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Battery2"]
+[node name="BatteryAnimation" type="AnimatedSprite" parent="Back/EnergyRack/Battery2"]
 
 frames = SubResource( 14 )
 animation = "default"
+
+[node name="ExplosionAnimation" type="AnimatedSprite" parent="Back/EnergyRack/Battery2"]
+
+visibility/visible = false
+transform/pos = Vector2( -20, 12 )
+frames = SubResource( 20 )
+animation = "default"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Back/EnergyRack/Battery2"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/Explosion = SubResource( 21 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
 
 [node name="Battery3" type="Node2D" parent="Back/EnergyRack"]
 
-editor/display_folded = true
 transform/pos = Vector2( 24, 0 )
-script/script = ExtResource( 26 )
+script/script = ExtResource( 30 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Battery3"]
+[node name="BatteryAnimation" type="AnimatedSprite" parent="Back/EnergyRack/Battery3"]
 
 frames = SubResource( 14 )
 animation = "default"
+
+[node name="ExplosionAnimation" type="AnimatedSprite" parent="Back/EnergyRack/Battery3"]
+
+visibility/visible = false
+transform/pos = Vector2( -20, 12 )
+frames = SubResource( 20 )
+animation = "default"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Back/EnergyRack/Battery3"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/Explosion = SubResource( 21 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
 
 [node name="Battery4" type="Node2D" parent="Back/EnergyRack"]
 
-editor/display_folded = true
 transform/pos = Vector2( 36, 0 )
-script/script = ExtResource( 27 )
+script/script = ExtResource( 31 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Battery4"]
+[node name="BatteryAnimation" type="AnimatedSprite" parent="Back/EnergyRack/Battery4"]
 
 frames = SubResource( 14 )
 animation = "default"
+
+[node name="ExplosionAnimation" type="AnimatedSprite" parent="Back/EnergyRack/Battery4"]
+
+visibility/visible = false
+transform/pos = Vector2( -20, 12 )
+frames = SubResource( 20 )
+animation = "default"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Back/EnergyRack/Battery4"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/Explosion = SubResource( 21 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
 
 [node name="Interruptor1" type="StaticBody2D" parent="Back/EnergyRack"]
 
@@ -413,7 +571,7 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
-script/script = ExtResource( 28 )
+script/script = ExtResource( 32 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Interruptor1"]
 
@@ -441,7 +599,7 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
-script/script = ExtResource( 31 )
+script/script = ExtResource( 35 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Interruptor2"]
 
@@ -469,7 +627,7 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
-script/script = ExtResource( 34 )
+script/script = ExtResource( 38 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Interruptor3"]
 
@@ -497,7 +655,7 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
-script/script = ExtResource( 37 )
+script/script = ExtResource( 41 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Back/EnergyRack/Interruptor4"]
 
@@ -526,7 +684,7 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
-script/script = ExtResource( 40 )
+script/script = ExtResource( 44 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Back/Workbench"]
 
@@ -549,7 +707,7 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
-script/script = ExtResource( 41 )
+script/script = ExtResource( 45 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Back/O2Generator"]
 
@@ -563,13 +721,13 @@ _update_shape_index = 0
 
 frames = SubResource( 12 )
 animation = "default"
-frame = 1
+frame = 3
 playing = true
 
 [node name="IdleSprite" type="Sprite" parent="Back/O2Generator"]
 
 visibility/visible = false
-texture = ExtResource( 47 )
+texture = ExtResource( 51 )
 
 [node name="Heater" type="StaticBody2D" parent="Back"]
 
@@ -585,15 +743,15 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
-script/script = ExtResource( 48 )
+script/script = ExtResource( 52 )
 
 [node name="SpriteOn" type="Sprite" parent="Back/Heater"]
 
-texture = ExtResource( 49 )
+texture = ExtResource( 53 )
 
 [node name="SpriteOff" type="Sprite" parent="Back/Heater"]
 
-texture = ExtResource( 50 )
+texture = ExtResource( 54 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Back/Heater"]
 
@@ -606,14 +764,14 @@ _update_shape_index = 0
 [node name="WaterFloor" type="Sprite" parent="Back"]
 
 z/z = 5
-texture = ExtResource( 51 )
+texture = ExtResource( 55 )
 offset = Vector2( 256, 192 )
 
 [node name="Darkness" type="Sprite" parent="Back"]
 
 visibility/visible = false
 z/z = 10
-texture = ExtResource( 52 )
+texture = ExtResource( 56 )
 offset = Vector2( 256, 192 )
 
 [node name="StairDownFloor2" type="Area2D" parent="Back"]
@@ -752,17 +910,16 @@ _update_shape_index = 0
 
 [node name="Character" type="KinematicBody2D" parent="."]
 
-editor/display_folded = true
 transform/pos = Vector2( 250, 229 )
 z/z = 3
-input/pickable = false
+input/pickable = true
 shapes/0/shape = SubResource( 9 )
 shapes/0/transform = Matrix32( 0.3, 0, 0, 0.8, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 collision/margin = 0.08
-script/script = ExtResource( 53 )
+script/script = ExtResource( 57 )
 
 [node name="WalkRight" type="AnimatedSprite" parent="Character"]
 
@@ -807,6 +964,38 @@ shape = SubResource( 9 )
 trigger = false
 _update_shape_index = 0
 
+[node name="FoodBack" type="AnimatedSprite" parent="Character"]
+
+visibility/visible = false
+transform/pos = Vector2( -10, -25 )
+transform/scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 22 )
+animation = "default"
+
+[node name="FoodHumor" type="AnimatedSprite" parent="Character"]
+
+visibility/visible = false
+transform/pos = Vector2( -10, -25 )
+transform/scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 23 )
+animation = "default"
+
+[node name="EnergyBack" type="AnimatedSprite" parent="Character"]
+
+visibility/visible = false
+transform/pos = Vector2( 0, -25 )
+transform/scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 24 )
+animation = "default"
+
+[node name="EnergyHumor" type="AnimatedSprite" parent="Character"]
+
+visibility/visible = false
+transform/pos = Vector2( 0, -25 )
+transform/scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 25 )
+animation = "default"
+
 [connection signal="input_event" from="Back/Bed" to="Back/Bed" method="_on_Bed_input_event"]
 
 [connection signal="input_event" from="Back/Piano" to="Back/Piano" method="_on_StaticBody2D_input_event"]
@@ -842,5 +1031,7 @@ _update_shape_index = 0
 [connection signal="body_enter" from="Back/Floor1Down" to="Character" method="_on_Floor1Down_body_enter"]
 
 [connection signal="body_enter" from="Back/Floor0Up" to="Character" method="_on_Floor0Up_body_enter"]
+
+[connection signal="input_event" from="Character" to="Character" method="_on_Character_input_event"]
 
 

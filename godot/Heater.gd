@@ -11,7 +11,7 @@ func _ready():
 func _fixed_process(delta):
 	pass
 
-func shutdown():
+func turnOff():
 	get_node("SpriteOff").show()
 	get_node("SpriteOn").hide()
 	isOn = false
